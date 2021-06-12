@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>任务列表-前端渲染</title>
+
+  <link rel="stylesheet" href="./css/index.css" />
+</head>
+
+<body>
+  <div id="root">
+    <div class="todo-container">
+      <div class="todo-wrap">
+        <div class="todo-header">
+          <input type="text" placeholder="请输入你的任务名称，按回车键确认" />
+        </div>
+        <ul class="todo-main" style='display: block'>
+          <!-- <li>
+              <label>
+                <input type="checkbox" />
+                <span>xxxxx</span>
+              </label>
+              <button class="btn btn-danger" style="display: none">删除</button>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" />
+                <span>yyyy</span>
+              </label>
+              <button class="btn btn-danger" style="display: none">删除</button>
+            </li> -->
+        </ul>
+        <h1 id='tip' style='color: brown;display: none;text-align: center;'>任务全部完成</h1>
+        <div class="todo-footer" style='display: block'>
+          <label>
+            <input id='status' type="checkbox" />
+          </label>
+          <span id='isDone'>已完成0</span>
+          <span id="allDone"> / 全部2 </span>
+          <button class="btn btn-danger">清除已完成任务</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="/js/tools/index.js"></script>
+
+  <script src="/js/logic/index.js"></script>
+</body>
+
+</html>
