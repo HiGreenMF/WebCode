@@ -1,1 +1,0 @@
-!function(){"use strict";console.log("zs"),console.log(111),console.log(222),console.log("箭头函数")}();
